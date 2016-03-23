@@ -1,0 +1,10 @@
+framework module component {
+  umbrella header "component.h"
+
+  export *
+  module * { export * }
+}
+
+module component.Swift {
+    header "component-Swift.h"
+}
