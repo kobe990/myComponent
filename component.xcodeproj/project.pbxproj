@@ -10,6 +10,7 @@
 		FBECE9BE1CA2C8C300A5F935 /* component.h in Headers */ = {isa = PBXBuildFile; fileRef = FBECE9BD1CA2C8C300A5F935 /* component.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBECE9C51CA2C8C300A5F935 /* component.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBECE9BA1CA2C8C300A5F935 /* component.framework */; };
 		FBECE9CA1CA2C8C300A5F935 /* componentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBECE9C91CA2C8C300A5F935 /* componentTests.swift */; };
+		FBECE9D51CA2C8DA00A5F935 /* myComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBECE9D41CA2C8DA00A5F935 /* myComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		FBECE9C41CA2C8C300A5F935 /* componentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = componentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBECE9C91CA2C8C300A5F935 /* componentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = componentTests.swift; sourceTree = "<group>"; };
 		FBECE9CB1CA2C8C300A5F935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBECE9D41CA2C8DA00A5F935 /* myComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				FBECE9BD1CA2C8C300A5F935 /* component.h */,
 				FBECE9BF1CA2C8C300A5F935 /* Info.plist */,
+				FBECE9D41CA2C8DA00A5F935 /* myComponent.swift */,
 			);
 			path = component;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBECE9D51CA2C8DA00A5F935 /* myComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 		FBECE9CF1CA2C8C300A5F935 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.component;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FBECE9D01CA2C8C300A5F935 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
