@@ -8,13 +8,13 @@
 
 import UIKit
 
-class myComponent {
+public class myComponent {
     
     public init() {
         
     }
     
-    func myprint() {
+    public func myprint() {
         print("this is zxa")
     }
 }
