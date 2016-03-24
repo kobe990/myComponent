@@ -9,6 +9,11 @@
 import UIKit
 
 class myComponent {
+    
+    public init() {
+        
+    }
+    
     func myprint() {
         print("this is zxa")
     }
